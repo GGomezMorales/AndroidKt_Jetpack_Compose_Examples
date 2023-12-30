@@ -50,17 +50,17 @@ fun SimpleAnimation() {
             sizeState at 0 with LinearOutSlowInEasing
             sizeState * 1.5f at 1000 with FastOutLinearInEasing
             sizeState * 2f at 5000
-        }
+        }, label = ""
     )
 
-    val infiniteTransition = rememberInfiniteTransition()
+    val infiniteTransition = rememberInfiniteTransition(label = "")
     val color by infiniteTransition.animateColor(
         initialValue = Color.Red,
         targetValue = Color.Green,
         animationSpec = infiniteRepeatable(
             tween(durationMillis = 2000),
             repeatMode = RepeatMode.Reverse
-        )
+        ), label = ""
     )
 
     Box(
