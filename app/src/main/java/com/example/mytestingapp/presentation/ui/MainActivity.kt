@@ -1,4 +1,4 @@
-package com.example.mytestingapp.presentation.theme.ui
+package com.example.mytestingapp.presentation.ui
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -13,10 +13,10 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
 //            TextFieldButtonsAndSnackbarsCompose()
-            SimpleAnimation()
+//            SimpleAnimation()
 //            ListsCompose()
 //            LazyListsCompose()
-//            DrawPaths()
+            DrawPaths()
         }
     }
 }
