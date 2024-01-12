@@ -11,16 +11,13 @@ import com.example.mytestingapp.presentation.ui.composables.Snackbars
 import com.example.mytestingapp.presentation.ui.composables.SimpleAnimation
 import com.example.mytestingapp.presentation.ui.composables.DrawPaths
 import com.example.mytestingapp.presentation.ui.composables.BirthdayCard
+import com.example.mytestingapp.presentation.ui.composables.PhotoPicker
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            Surface(
-//                modifier = Modifier.fillMaxSize()
-            ) {
-
-            }
+            PhotoPicker()
         }
     }
 }
