@@ -1,4 +1,4 @@
-package com.example.mytestingapp.presentation.ui
+package com.example.mytestingapp.presentation
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -16,11 +16,7 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            Surface(
-//                modifier = Modifier.fillMaxSize()
-            ) {
-
-            }
+            AppNavigation()
         }
     }
 }
