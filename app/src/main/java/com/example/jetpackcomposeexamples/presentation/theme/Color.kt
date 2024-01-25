@@ -1,4 +1,4 @@
-package com.example.mytestingapp.presentation.theme.ui.theme
+package com.example.jetpackcomposeexamples.presentation.theme.ui.theme
 
 import androidx.compose.ui.graphics.Color
 

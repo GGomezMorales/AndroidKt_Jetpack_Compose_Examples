@@ -1,4 +1,4 @@
-package com.example.mytestingapp.presentation.ui.screens
+package com.example.jetpackcomposeexamples.presentation.ui.screens
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -18,13 +18,13 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
-import com.example.mytestingapp.presentation.Screens
+import com.example.jetpackcomposeexamples.presentation.Screens
 
 @Composable
 fun MainScreen(navController: NavController) {
     
     var text by remember {
-        mutableStateOf("")
+        mutableStateOf<String?>("")
     }
     
     Column(
@@ -35,9 +35,9 @@ fun MainScreen(navController: NavController) {
     ) {
         TextField(
             modifier = Modifier.fillMaxWidth(),
-            value = text,
+            value = text ?: "",
             onValueChange = {
-                text = it
+                text = it ?: ""
             }
         )
         Spacer(modifier = Modifier.height(8.dp))

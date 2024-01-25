@@ -1,4 +1,4 @@
-package com.example.mytestingapp.presentation.ui.composables
+package com.example.jetpackcomposeexamples.presentation.ui.composables
 
 import android.annotation.SuppressLint
 import androidx.compose.foundation.layout.Arrangement

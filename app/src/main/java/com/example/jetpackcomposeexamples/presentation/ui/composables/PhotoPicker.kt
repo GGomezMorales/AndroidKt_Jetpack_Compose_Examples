@@ -1,4 +1,4 @@
-package com.example.mytestingapp.presentation.ui.composables
+package com.example.jetpackcomposeexamples.presentation.ui.composables
 
 import android.net.Uri
 import androidx.activity.compose.rememberLauncherForActivityResult

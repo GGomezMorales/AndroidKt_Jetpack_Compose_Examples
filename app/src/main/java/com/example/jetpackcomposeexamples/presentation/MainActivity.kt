@@ -1,4 +1,4 @@
-package com.example.mytestingapp.presentation
+package com.example.jetpackcomposeexamples.presentation
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -9,9 +9,6 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             AppNavigation()
-
-
-//            PhotoPicker()
         }
     }
 }
